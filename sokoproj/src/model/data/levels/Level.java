@@ -1,12 +1,12 @@
-package levels;
+package model.data.levels;
 
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import levels.gameObj.GameObject;
-import levels.gameObj.Player;
+import model.data.levels.gameObj.GameObject;
+import model.data.levels.gameObj.Player;
 
 
 

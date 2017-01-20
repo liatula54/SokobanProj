@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-import MyException.MoveException;
 import commands.Command;
 import commands.DisplayLevelCommand;
 import commands.ExitCommand;
 import commands.LoadFileNameCommand;
 import commands.MoveCommand;
 import commands.SaveFileNameCommand;
-import levels.Level;
+import model.MyException.MoveException;
+import model.data.levels.Level;
 
 public class CLI {
 	private PriorityQueue<Command> command;

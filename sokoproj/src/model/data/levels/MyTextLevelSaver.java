@@ -1,11 +1,11 @@
-package levels;
+package model.data.levels;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Map;
 
-import levels.gameObj.GameObject;
+import model.data.levels.gameObj.GameObject;
 
 public class MyTextLevelSaver implements LevelSaver {
 

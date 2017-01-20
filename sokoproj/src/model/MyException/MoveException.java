@@ -1,4 +1,4 @@
-package MyException;
+package model.MyException;
 
 public class MoveException extends Exception {
 	

@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 
-import levels.Level;
-import levels.LevelLoader;
-import levels.MyObjectLevelLoader;
-import levels.MyTextLevelLoader;
-import levels.MyXMLLevelLoader;
+import model.data.levels.Level;
+import model.data.levels.LevelLoader;
+import model.data.levels.MyObjectLevelLoader;
+import model.data.levels.MyTextLevelLoader;
+import model.data.levels.MyXMLLevelLoader;
 public class LoadFileNameCommand implements Command{
 		
 		

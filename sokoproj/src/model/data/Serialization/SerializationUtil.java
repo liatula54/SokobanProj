@@ -1,4 +1,4 @@
-package Serialization;
+package model.data.Serialization;
 
 
 import java.io.FileNotFoundException;

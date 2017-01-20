@@ -1,7 +1,7 @@
-package levels.gameObj;
+package model.data.levels.gameObj;
 
-import levels.Level;
-import levels.Position;
+import model.data.levels.Level;
+import model.data.levels.Position;
 
 public class Wall extends GameObject {
 

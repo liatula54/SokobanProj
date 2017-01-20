@@ -1,8 +1,8 @@
-package levels;
+package model.data.levels;
 
 import java.util.Map;
 
-import levels.gameObj.GameObject;
+import model.data.levels.gameObj.GameObject;
 
 public class PrintLevel implements Print {
 

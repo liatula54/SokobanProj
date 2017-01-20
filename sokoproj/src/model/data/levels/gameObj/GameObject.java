@@ -1,9 +1,9 @@
-package levels.gameObj;
+package model.data.levels.gameObj;
 
 import java.io.Serializable;
 
-import levels.Level;
-import levels.Position;
+import model.data.levels.Level;
+import model.data.levels.Position;
 
 abstract public class GameObject implements Serializable{
 	 /**

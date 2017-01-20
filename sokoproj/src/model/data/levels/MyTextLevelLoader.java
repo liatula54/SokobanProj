@@ -1,4 +1,4 @@
-package levels;
+package model.data.levels;
 
 
 
@@ -8,12 +8,12 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-import levels.gameObj.Box;
-import levels.gameObj.GameObject;
-import levels.gameObj.Player;
-import levels.gameObj.Space;
-import levels.gameObj.Target;
-import levels.gameObj.Wall;
+import model.data.levels.gameObj.Box;
+import model.data.levels.gameObj.GameObject;
+import model.data.levels.gameObj.Player;
+import model.data.levels.gameObj.Space;
+import model.data.levels.gameObj.Target;
+import model.data.levels.gameObj.Wall;
 
 /**
  * @author liatu

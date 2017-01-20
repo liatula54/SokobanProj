@@ -1,4 +1,4 @@
-package levels;
+package model.data.levels;
 
 
 import java.io.IOException;

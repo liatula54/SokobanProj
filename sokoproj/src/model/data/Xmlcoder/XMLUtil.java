@@ -1,4 +1,4 @@
-package Xmlcoder;
+package model.data.Xmlcoder;
 
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;

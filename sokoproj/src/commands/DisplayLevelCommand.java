@@ -1,14 +1,14 @@
 package commands;
 
-import levels.Level;
-import levels.Print;
-import levels.PrintLevel;
+import model.data.levels.Level;
+import model.data.levels.Print;
+import model.data.levels.PrintLevel;
 
 public class DisplayLevelCommand implements Command {
 
-	
+
 	private Level level;
-	
+
 	//c'tor
 	public DisplayLevelCommand(Level l) {
 		this.level = l;

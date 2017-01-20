@@ -1,15 +1,15 @@
-package levels;
+package model.data.levels;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import Xmlcoder.XMLUtil;
+import model.data.Serialization.SerializationUtil;
 
-public class MyXMLLevelSaver implements LevelSaver {
+public class MyObjectLevelSaver implements LevelSaver {
 
 	@Override
 	public void saveLevel(Level l, String fileName) throws FileNotFoundException, IOException {
-		XMLUtil.encoder(l, fileName);
+		SerializationUtil.serialize(l, fileName);
 	}
 
 }

@@ -1,20 +1,22 @@
-package levels;
+package model.policy;
 
-import MyException.MoveException;
-import levels.gameObj.Player;
+import model.MyException.MoveException;
+import model.data.levels.Level;
+import model.data.levels.Position;
+import model.data.levels.gameObj.Player;
 
 public class MySokobanPolicy {
-	
+
 	public MySokobanPolicy()
 	{
 	}
-	
+
 	public void move(String dir,Level level) throws MoveException
 	{
 		Player p = level.getPlayer();
 		Position playerPos = p.getPosition();
 		Position newPlayerPos = null;
-		
+
 		switch(dir){
 			case("left"):
 				newPlayerPos = new Position(playerPos.getCol(), playerPos.getRow() - 1, playerPos.getDim());

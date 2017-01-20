@@ -5,11 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 
-import levels.Level;
-import levels.LevelSaver;
-import levels.MyObjectLevelSaver;
-import levels.MyTextLevelSaver;
-import levels.MyXMLLevelSaver;
+import model.data.levels.Level;
+import model.data.levels.LevelSaver;
+import model.data.levels.MyObjectLevelSaver;
+import model.data.levels.MyTextLevelSaver;
+import model.data.levels.MyXMLLevelSaver;
 
 public class SaveFileNameCommand implements Command {
 

@@ -1,8 +1,8 @@
-package levels;
+package model.data.levels;
 
 import java.io.InputStream;
 
-import Xmlcoder.XMLUtil;
+import model.data.Xmlcoder.XMLUtil;
 
 public class MyXMLLevelLoader implements LevelLoader {
 	

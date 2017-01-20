@@ -3,9 +3,9 @@ package commands;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import MyException.MoveException;
+import model.MyException.MoveException;
 
-public interface Command {	
+public interface Command {
 
 	 public void execute() throws FileNotFoundException, IOException, MoveException, ClassNotFoundException ;
  }

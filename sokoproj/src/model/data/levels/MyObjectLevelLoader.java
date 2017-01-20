@@ -1,9 +1,9 @@
-package levels;
+package model.data.levels;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import Serialization.SerializationUtil;
+import model.data.Serialization.SerializationUtil;
 
 public class MyObjectLevelLoader implements LevelLoader {
 	
