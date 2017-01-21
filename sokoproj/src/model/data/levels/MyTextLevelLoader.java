@@ -20,17 +20,17 @@ import model.data.levels.gameObj.Wall;
  *
  */
 public class MyTextLevelLoader implements LevelLoader {
-	
+
 	//default c'tor
 	public MyTextLevelLoader() {
-		
+
 	}
 
 
 
 	@Override
-	public Level loadLevel(InputStream is){		
-		
+	public Level loadLevel(InputStream is){
+
 		int rowNumber=-1;
 		BufferedInputStream in=new BufferedInputStream(is);
 		Scanner myScan = null;
@@ -44,9 +44,8 @@ public class MyTextLevelLoader implements LevelLoader {
 		myScan.close();
 
 		return l;
-		
 	}
-	
+
 	private void parseLine (String line, int row, Level level)
 	{
 		Map<Position, GameObject> levelMap = new TreeMap<Position, GameObject>();
@@ -59,11 +58,11 @@ public class MyTextLevelLoader implements LevelLoader {
 		}
 		level.getLevel().putAll(levelMap);
 	}
-	
+
 	private GameObject objectFactory(char ch, Position pos, Level level)
 	{
 		GameObject square=null;
-		
+
 		switch (ch){
 		case('#'):
 			square = new Wall(pos, level);
@@ -78,20 +77,20 @@ public class MyTextLevelLoader implements LevelLoader {
 		case ('o'):
 			square = new Target(pos, level);
 			level.addTargets(pos, square);
-			level.setNumOfTargets(level.getNumOfTargets() + 1);;
+			level.setNumOfTargets(level.getNumOfTargets() + 1);
 	 		break;
 		case (' '):
 			square = new Space(pos, level);
 		    break;
-	
+
 		}
-		
+
 		return square;
 	}
 }
 
 
-		
-		
-		
+
+
+
 

@@ -15,15 +15,15 @@ public class MyTextLevelSaver implements LevelSaver {
 		int currRow = 0;
 		for(Map.Entry<Position, GameObject> e :  l.getLevel().entrySet())
 		{
-			if(currRow != e.getKey().getCol())
-		{
-			out.println();
-			currRow = e.getKey().getCol();
-		}
-			
+			if(currRow != e.getKey().getRow())
+			{
+				out.println();
+				currRow = e.getKey().getRow();
+			}
+
 			out.print(e.getValue().getSymbol());
 		}
-		
+
 		out.close();
 	}
 

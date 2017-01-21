@@ -18,8 +18,8 @@ public class Player extends GameObject {
 
 	@Override
 	public boolean move(Position toP) {
-		Map<Position,GameObject> m = l.getLevel();
-		GameObject obj = m.get(toP);
+		Map<Position,GameObject> gameObjMap = l.getLevel();
+		GameObject obj = gameObjMap.get(toP);
 		if(obj == null)
 		{
 			System.out.println("Can't move there!!!");
@@ -35,15 +35,15 @@ public class Player extends GameObject {
 			//replace my object with space			
 			if(l.getTargets().containsKey(p))
 			{
-				m.put(p, new Target(p, l));
+				gameObjMap.put(p, new Target(p, l));
 			}
 			else{
-				m.put(p, new Space(p, l));
+				gameObjMap.put(p, new Space(p, l));
 			}
 			//update this to the new position
 			p = toP;
-			m.put(p, this);
-			l.setLevel(m);
+			gameObjMap.put(p, this);
+			l.setLevel(gameObjMap);
 		}
 		else
 		{
