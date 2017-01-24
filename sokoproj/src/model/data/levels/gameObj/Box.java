@@ -1,20 +1,21 @@
 package model.data.levels.gameObj;
 
-import java.util.Map;
 
+import java.util.Map;
+import common.Position;
 import model.data.levels.Level;
-import model.data.levels.Position;
+
 
 public class Box extends GameObject {
 
-	
-	private static final long serialVersionUID = 1L;	
+
+	private static final long serialVersionUID = 1L;
 	//default c'tor
 	public Box(){}
-	
+
 	//c'tor
 	public Box(Position p, Level l) {
-		super(p, l);		
+		super(p, l);
 	}
 
 	@Override
@@ -50,13 +51,13 @@ public class Box extends GameObject {
 			p = toP;
 			m.put(p, this);
 			l.setLevel(m);
-			
+
 			if((l.getTargets().containsKey(toP)))
 			{
 				l.setNumOfTargets(l.getNumOfTargets() - 1);
 				System.out.println("Targets left:" + l.getNumOfTargets());
 			}
-			
+
 		}
 		return ret;
 	}
@@ -68,7 +69,7 @@ public class Box extends GameObject {
 
 	@Override
 	public String getSymbol() {
-		
+
 		return "@";
 	}
 }

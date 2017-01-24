@@ -1,4 +1,4 @@
-package commands;
+package controller.commands;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,13 +10,13 @@ import model.data.levels.LevelLoader;
 import model.data.levels.MyObjectLevelLoader;
 import model.data.levels.MyTextLevelLoader;
 import model.data.levels.MyXMLLevelLoader;
-public class LoadFileNameCommand implements Command{
-		
-		
+public class LoadFileNameCommand extends Command{
+
+
 		private String fileName = null;
 		private HashMap<String, LevelLoader> suffixToLoader;
 		private Level level;
-		
+
 	//c'tor
 		public LoadFileNameCommand(String fName)  {
 			this.fileName = fName;
@@ -34,7 +34,7 @@ public class LoadFileNameCommand implements Command{
 		LevelLoader lL = suffixToLoader.get(suffix);
 		FileInputStream fis;
 		fis = new FileInputStream(fileName);
-		level = lL.loadLevel(fis);	
+		level = lL.loadLevel(fis);
 	}
 
 	public String getFileName() {
@@ -52,11 +52,11 @@ public class LoadFileNameCommand implements Command{
 	public void setSuffixToLoader(HashMap<String, LevelLoader> suffixToLoader) {
 		this.suffixToLoader = suffixToLoader;
 	}
-	
+
 	public Level getLevel(){
 		return level;
 	}
-	
+
 	public void setLevel(Level level){
 		this.level = level;
 	}

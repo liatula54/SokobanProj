@@ -1,16 +1,16 @@
 package model.data.levels.gameObj;
 
 import java.util.Map;
-
+import common.Position;
 import model.data.levels.Level;
-import model.data.levels.Position;
+
 
 public class Player extends GameObject {
-	
+
 	private static final long serialVersionUID = 1L;
 	//default c'tor
 	public Player(){}
-	
+
 	//c'tor
 	public Player(Position p, Level l) {
 		super(p, l);
@@ -32,7 +32,7 @@ public class Player extends GameObject {
 		boolean ret = obj.move(objToPos);
 		if(ret)
 		{
-			//replace my object with space			
+			//replace my object with space
 			if(l.getTargets().containsKey(p))
 			{
 				gameObjMap.put(p, new Target(p, l));
@@ -52,7 +52,7 @@ public class Player extends GameObject {
 		return ret;
 	}
 
-	
+
 	public void name()
 	{
 		System.out.print("A");
@@ -60,7 +60,7 @@ public class Player extends GameObject {
 
 	@Override
 	public String getSymbol() {
-		
+
 		return "A";
 	}
 

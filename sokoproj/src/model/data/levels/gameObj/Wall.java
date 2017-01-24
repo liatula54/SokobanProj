@@ -1,7 +1,7 @@
 package model.data.levels.gameObj;
 
 import model.data.levels.Level;
-import model.data.levels.Position;
+import common.Position;
 
 public class Wall extends GameObject {
 
@@ -9,8 +9,8 @@ public class Wall extends GameObject {
 
 	//default c'tor
 	public Wall(){}
-	
-	
+
+
 	// c'tor
 	public Wall(Position p, Level l){
 		super(p, l);
@@ -20,7 +20,7 @@ public class Wall extends GameObject {
 	public boolean move(Position p) {
 		return false;
 	}
-	
+
 
 	public void name()
 	{
@@ -29,7 +29,7 @@ public class Wall extends GameObject {
 
 	@Override
 	public String getSymbol() {
-		
+
 		return "#";
 	}
 

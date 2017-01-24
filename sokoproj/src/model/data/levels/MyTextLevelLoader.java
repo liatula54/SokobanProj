@@ -1,13 +1,12 @@
 package model.data.levels;
 
 
-
+import common.Position;
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
-
 import model.data.levels.gameObj.Box;
 import model.data.levels.gameObj.GameObject;
 import model.data.levels.gameObj.Player;

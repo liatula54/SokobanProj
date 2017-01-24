@@ -2,6 +2,7 @@ package model.data.levels;
 
 import java.util.Map;
 
+import common.Position;
 import model.data.levels.gameObj.GameObject;
 
 public class PrintLevel implements Print {
@@ -16,10 +17,10 @@ public class PrintLevel implements Print {
 			System.out.println();
 			currRow = e.getKey().getCol();
 		}
-			
+
 			e.getValue().name();
 		}
 		System.out.println();
 	}
-	
+
 }

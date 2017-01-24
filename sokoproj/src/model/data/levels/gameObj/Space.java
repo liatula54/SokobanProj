@@ -1,7 +1,7 @@
 package model.data.levels.gameObj;
 
 import model.data.levels.Level;
-import model.data.levels.Position;
+import common.Position;
 
 public class Space extends GameObject {
 
@@ -10,11 +10,11 @@ public class Space extends GameObject {
 
 	//default c'tor
 	public Space(){}
-	
+
 	// c'tor
 	public Space(Position p, Level l) {
 		super(p, l);
-		
+
 	}
 
 	@Override
@@ -30,8 +30,11 @@ public class Space extends GameObject {
 
 	@Override
 	public String getSymbol() {
-		
+
 		return " ";
 	}
+
+
+
 
 }

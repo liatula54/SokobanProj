@@ -1,4 +1,4 @@
-package commands;
+package controller.commands;
 
 
 import java.io.FileNotFoundException;
@@ -11,12 +11,12 @@ import model.data.levels.MyObjectLevelSaver;
 import model.data.levels.MyTextLevelSaver;
 import model.data.levels.MyXMLLevelSaver;
 
-public class SaveFileNameCommand implements Command {
+public class SaveFileNameCommand extends Command {
 
 	private Level level;
 	private HashMap<String, LevelSaver> suffixToSaveFile;
 	private String fileName;
-	
+
 	public SaveFileNameCommand(Level l,String fileName) {
 		this.fileName = fileName;
 		this.setLevel(l);
@@ -24,7 +24,7 @@ public class SaveFileNameCommand implements Command {
 		suffixToSaveFile.put("txt", new MyTextLevelSaver());
 		suffixToSaveFile.put("xml", new MyXMLLevelSaver());
 		suffixToSaveFile.put("obj", new MyObjectLevelSaver());
-		
+
 	}
 
 	@Override

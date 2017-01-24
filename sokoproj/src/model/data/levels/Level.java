@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+import common.Position;
 import model.data.levels.gameObj.GameObject;
 import model.data.levels.gameObj.Player;
 
